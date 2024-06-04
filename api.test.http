@@ -1,0 +1,63 @@
+POST http://ws.youmepower.com.cn:5151/ci/gri HTTP/1.1
+Content-Type: application/json; charset=UTF-8
+
+{
+    "aid":"2405180900",
+    "idc":"110104198104073056",
+    "rn":"胡光"
+}
+// 110104198104073056  胡光
+// 110106201005181219  刘子云
+
+POST http://ws.youmepower.com.cn:5151/ci/gi HTTP/1.1
+Content-Type: application/json; charset=UTF-8
+
+{
+    "aid":"2405180900",
+    "idc":"131082200910110817",
+    "rn":"席嘉禾"
+}
+
+POST http://ws.youmepower.com.cn:5151/ci/cfm HTTP/1.1
+Content-Type: application/json 
+
+{
+    "aid":"2405180900",
+    "idc":"131082200910110817",
+    "px":0
+}
+
+POST http://ws.youmepower.com.cn:5151/ci/wcf HTTP/1.1
+Content-Type: application/json
+
+{
+    "content":"2405180900",
+}
+
+POST  http://ws.youmepower.com.cn:5151/ci/rcf HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+loc=xwyp
+
+POST http://ws.youmepower.com.cn:5151/ci/ds HTTP/1.1
+Content-Type: application/json 
+
+{
+    "aid":"2405180900"
+}
+
+// ====================================Test=======================================
+
+GET http://ws.youmepower.com.cn:5151/ci/ts?aid=2405180900 HTTP/1.1
+Content-Type: text/plain; charset=UTF-8
+
+POST http://ws.youmepower.com.cn:5151/ci/gri HTTP/1.1
+Content-Type: application/json; charset=UTF-8
+
+{
+    "aid":"2405180900",
+    "idc":"110104198104073056",
+    "rn":"胡光",
+    "px":0
+}
+
